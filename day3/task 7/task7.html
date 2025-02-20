@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .slider-container {
+            position: relative;
+            width: 500px;
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider img {
+            width: 500px;
+            height: 300px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <img src="download (1).jpg" alt="Image 1">
+            <img src="download.jpg" alt="Image 2">
+            <img src="download (3).jpg" alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <script>
+        let index = 0;
+        const slider = document.getElementById("slider");
+        const images = document.querySelectorAll(".slider img");
+        const totalImages = images.length;
+
+        function showSlide() {
+            slider.style.transform = `translateX(${-index * 500}px)`;
+        }
+
+        function prevSlide() {
+            index = (index > 0) ? index - 1 : totalImages - 1;
+            showSlide();
+        }
+
+        function nextSlide() {
+            index = (index < totalImages - 1) ? index + 1 : 0;
+            showSlide();
+        }
+    </script>
+</body>
+</html>
