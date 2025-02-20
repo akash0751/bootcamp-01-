@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <style>
+        body{
+            display: flex;
+        }
+      #div2 {
+          margin-left: 50%;
+          margin-top: 20%;
+      }
+
+      #div1 {
+        position: fixed;
+        border: 2px solid whitesmoke;
+        background-color: antiquewhite;
+        padding: 10px;
+        align-items: center;
+        opacity: 0;
+        
+      }
+
+      .show {
+        opacity: 1;
+      }
+
+      
+    </style>
+</head>
+<body>
+
+    <div id="div2">
+        <button id="btn1">Click me</button>
+    </div>
+    <div class="container">
+    <div id="div1">
+        <h4>Hey Bro</h4>
+        <p>I'm here to ask how was your day?</p>
+        <button id="btn2">Close</button>
+   </div>
+    </div>
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let modal = document.getElementById("div1");
+
+        btn1.addEventListener("click", () => {
+            modal.style.opacity=1;
+        });
+
+        btn2.addEventListener("click",() =>{
+            modal.style.opacity=0;
+        })
+
+        
+    </script>
+</body>
+</html>
