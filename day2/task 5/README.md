@@ -4,12 +4,15 @@ This is a personal portfolio website built using HTML and CSS. The website consi
 Home Page:
 Introduction section with a profile picture.
 Skills section highlighting expertise in HTML, CSS, JavaScript, and Spring Boot.
+
 About Page:
 Information about experience and career goals.
 Well-structured layout with a modern card-style design.
+
 Contact Page:
 A contact form to collect user inquiries.
 Personal contact details, including email and phone number.
+
 Responsive Navigation:
 A clean, user-friendly menu with hover effects.
 Responsive layout for better mobile compatibility.
