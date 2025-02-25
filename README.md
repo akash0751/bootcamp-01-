@@ -11,3 +11,7 @@ A Advance Websites are built using HTML and CSS and JavaScript to practice basic
 **Day-5:**
 
 Learned about the basics of methods and functions in Node.js
+
+**Day-6**
+
+Learned about API handling using Node.js and Express.js by routing and connecting it to the server.
