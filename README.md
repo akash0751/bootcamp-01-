@@ -15,3 +15,7 @@ Learned about the basics of methods and functions in Node.js
 **Day-6**
 
 Learned about API handling using Node.js and Express.js by routing and connecting it to the server.
+
+**Day-7**
+
+Learned about API handling using Node.js and Express.js by routing and getting data from the database using MongoDB.
