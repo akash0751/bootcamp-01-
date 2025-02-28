@@ -1,8 +1,25 @@
-# React + Vite
+**Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that displays a student's details in a card format. It utilizes React components and props to dynamically pass and render student information.
 
-Currently, two official plugins are available:
+App.jsx: Imports and renders the Student component, passing student details (rollNo, name, dept, year) as props.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Student.jsx: A reusable component that displays student information and includes PropTypes validation for type safety.
+
+**What I Learned**
+
+*Component-Based Architecture:*
+
+Created a reusable Student component.
+
+Passed data from App.jsx to Student.jsx using props.
+
+*Props Handling in React:*
+
+Defined required and optional props.
+
+Used PropTypes for type validation.
+
+JSX Syntax: Rendered dynamic content using {props.name}.
+
+Modular Code Structure: Separated concerns by keeping App.jsx and Student.jsx independent.
