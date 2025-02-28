@@ -1,8 +1,33 @@
-# React + Vite
+**Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that displays a list of students with dynamic styling based on their academic year. Each student is shown on a student card with their name, department, and year, and the background color changes dynamically based on the year.
 
-Currently, two official plugins are available:
+**App.jsx:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Renders multiple Student components, each with different details.
+
+Passes rollNo, name, dept, and year as props.
+
+**Student.jsx:**
+
+A reusable React component that displays student information.
+
+Implements dynamic background colors based on the year property.
+
+Uses PropTypes for type validation.
+
+**What I Learned**
+
+*Dynamic Styling in React:*
+
+Used inline styles to change the background color dynamically based on the student’s year.
+
+*Props Handling:*
+
+Passed student details as props and rendered them dynamically.
+
+*Using PropTypes:*
+
+Ensured type safety by validating props.
+Component Reusability:
+Created a Student component and reused it multiple times in App.jsx.
