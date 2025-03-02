@@ -23,3 +23,11 @@ Learned about API handling using Node.js and Express.js by routing and getting d
 **Day-8**
 
 Learned about React.js and their functionalities.
+
+**Day-9**
+
+Worked with F/E and B/E using Node, Express, MongoDB, React and learned about API calls from F/E to B/E.
+
+**Day-10**
+
+Made a Task Manager site using F/E and B/E (React, Node, Express, MongoDB).
